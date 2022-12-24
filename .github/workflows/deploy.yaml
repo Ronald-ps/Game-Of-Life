@@ -4,21 +4,14 @@ on:
     branches:
       - master
 jobs:
-  deploy:
+  build_vue:
     runs-on: ubuntu-latest
+    name: Build Vue
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '12'
-      - name: deploy to gh-pages
-        run: |
-          echo $(pwd)
-          cd ./vue-game/
-          npm i
-          NODE_ENV=production npm run build
-          cd dist
-          git init
-          git add -A
-          git commit -m "🚀 Deploy id ${GITHUB_RUN_ID}"
-          git push -f "https://github.com/${GITHUB_REPOSITORY}.git" master:gh-pages
+    - uses: actions/checkout@v2
+    - id: Build-Vue
+      uses: xRealNeon/VuePagesAction@1.0.1
+      with:
+        username: 'Ronald-ps'
+        reponame: 'Game-Of-Life'
+        token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
