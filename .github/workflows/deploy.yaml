@@ -13,6 +13,8 @@ jobs:
           node-version: '12'
       - name: deploy to gh-pages
         run: |
+          echo $(pwd)
+          cd ./vue-game/
           npm i
           NODE_ENV=production npm run build
           cd dist
