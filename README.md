@@ -1,6 +1,4 @@
 # Jogo da vida
-Para rodar, executar o arquivo no shell. Abaixo, segue o pensamento de como montei a lógica do jogo analisando suas regras. A análise abaixo foi feita antes de começar a codar.
-
 ## Regras:
 
 O universo do Jogo da Vida é uma grade ortogonal bidimensional infinita de células quadradas, cada uma das quais está em um dos dois estados possíveis, viva ou morta (ou povoada e despovoada, respectivamente). Cada célula interage com seus oito vizinhos, que são as células que são adjacentes horizontal, vertical ou diagonalmente. A cada etapa no tempo, ocorrem as seguintes transições:
