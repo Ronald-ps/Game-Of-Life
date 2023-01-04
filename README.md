@@ -1,4 +1,22 @@
 # Jogo da vida
+
+## Rodar a versão em python:
+
+No terminal, execute o seguinte comando:
+```shell
+$ cd python-game/; python3 main.py;
+```
+
+## Rodar o jogo em vue:
+
+No terminal, rode o seguinte comando:
+```shell
+$ cd vue-game/; npm ci; npm run serve;
+```
+
+Siga o link que aparecer no terminal, a aplicação irá rodar.
+
+
 ## Regras:
 
 O universo do Jogo da Vida é uma grade ortogonal bidimensional infinita de células quadradas, cada uma das quais está em um dos dois estados possíveis, viva ou morta (ou povoada e despovoada, respectivamente). Cada célula interage com seus oito vizinhos, que são as células que são adjacentes horizontal, vertical ou diagonalmente. A cada etapa no tempo, ocorrem as seguintes transições:
